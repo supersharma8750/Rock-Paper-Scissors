@@ -1,0 +1,21 @@
+# Built application files
+*.apk
+*.aab
+
+# Gradle files
+.gradle/
+build/
+
+# Local config
+local.properties
+
+# IDE files
+.idea/
+*.iml
+
+# Keys & secrets
+*.jks
+*.keystore
+
+# Firebase (if you add later)
+google-services.json

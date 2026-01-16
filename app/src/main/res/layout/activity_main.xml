@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#CDDC39"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rock Paper Scissors"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Score Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player: "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/player_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:paddingEnd="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer: "
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/computer_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Moves and Result -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/user_move_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/question_mark"
+            android:contentDescription="Player choice"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="vs"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="16dp"/>
+        <ImageView
+            android:id="@+id/computer_move_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/question_mark"
+            android:contentDescription="Computer choice"/>
+    </LinearLayout>
+
+    <!-- Result Text -->
+    <TextView
+        android:id="@+id/winner_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#FF5722"
+        android:paddingBottom="24dp"
+        android:paddingTop="8dp"/>
+
+    <!-- Choice Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/rock_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/rock"
+            android:contentDescription="Rock choice"
+            android:paddingEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/paper_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/paper"
+            android:contentDescription="Paper choice"
+            android:paddingEnd="8dp"/>
+
+        <ImageView
+            android:id="@+id/scissors_btn"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/download"
+            android:contentDescription="Scissors choice"/>
+    </LinearLayout>
+
+    <!-- Restart Button -->
+    <Button
+        android:id="@+id/restart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>
